@@ -2,13 +2,13 @@
   "configVersion": 2,
   "packages": [
     {
-      "name": "olawills_clean_arch_gen",
+      "name": "dart_clean_gen",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-10-24T14:27:58.851684Z",
+  "generated": "2023-10-24T14:37:40.229763Z",
   "generator": "pub",
   "generatorVersion": "3.0.5"
 }
