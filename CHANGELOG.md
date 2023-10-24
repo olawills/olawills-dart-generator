@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Bug Fixes
+- Update File Structure
+
 ## 1.0.2
 
 - Bug Fixes

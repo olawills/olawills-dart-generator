@@ -1,6 +1,6 @@
 import 'dart:io';
 
-String currentProjectPath = '';
+String currentProjectPath = 'lib/';
 
 void setCurrentProjectPath() {
   currentProjectPath = Directory.current.path;

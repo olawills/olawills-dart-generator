@@ -17,19 +17,7 @@ Activate it with
 ```shell
  dart pub run olawills_clean_arch_gen
 ```
-This command generates a clean architecture folder structure for Bloc base applications
-
-if you do not want to delete manually created folders along with code generation, u can pass in the --delete-existing-folders to false
-```shell
- dart pub run olawills_clean_arch_gen --delete-existing-folders=false
-```
-if you do not pass in the extra parameter, it will go to the default which is to delete and generate new folder structure
-
-
-- You can modify the generator.dart file to change the folder structure to your taste.
-- This project was made to simplify the manual process of creating file, and it is majorly based on clean architecture and bloc
-
-#### Screeshots of Folder Structure
+This command generates a clean architecture folder structure for Bloc based applications
 
 ## Folder Structure
 
@@ -66,6 +54,21 @@ lib/
     └── widgets/   
 
 ```
+
+
+## Reminder
+
+if you do not want to delete manually created folders along with code generation, u can pass in the --delete-existing-folders to false
+```shell
+ dart pub run olawills_clean_arch_gen --delete-existing-folders=false
+```
+if you do not pass in the extra parameter, it will go to the default which is to delete and generate new folder structure
+
+
+- You can modify the generator.dart file to change the folder structure to your taste.
+- This project was made to simplify the manual process of creating file, and it is majorly based on clean architecture and bloc
+
+
 
 ## License
 

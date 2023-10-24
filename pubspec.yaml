@@ -1,5 +1,5 @@
 name: olawills_clean_arch_gen
-version: 1.0.1
+version: 1.0.3
 description: A simple clean architecture generator.
 repository: https://github.com/olawills/olawills-dart-generator
 
