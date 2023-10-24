@@ -1,4 +1,16 @@
-## Olawills Dart Generator
+## olawills_clean_arch_gen
+
+## Installation
+
+1. Add 'olawills_clean_arch_gen'
+ as a dev dependency in your 'pubspec.yaml';
+
+ ```
+ dev_dependencies:
+   olawills_clean_arch_gen: 1.0.0 
+ ```
+
+2. Run 'dart pub get' to fetch the package 
 
 To generate the boilerplate code for your project, run the following command: 
 Activate it with

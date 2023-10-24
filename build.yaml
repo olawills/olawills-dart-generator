@@ -1,2 +1,2 @@
 executables:
-  generator_base: bin/generator_base
+  generator_base: bin/olawills_clean_arch_gen
