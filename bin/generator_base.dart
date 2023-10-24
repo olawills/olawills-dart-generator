@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'config.dart';
-import 'generator.dart';
-import 'globals.dart';
+import '../lib/src/config.dart';
+import '../lib/src/generator.dart';
+import '../lib/src/globals.dart';
 
 void main() async {
   setCurrentProjectPath();
