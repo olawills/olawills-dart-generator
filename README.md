@@ -1,4 +1,14 @@
-## olawills_clean_arch_gen
+## Dart Clean Arch Generator
+
+A dart package to generate Clean Architecture boilerplate
+
+## Table of Contents
+
+- [Installation][#installation]
+- [Usage][#usage]
+- [Folder Structure][#folder-structure]
+- [License][#license]
+
 
 ## Installation
 
@@ -7,7 +17,7 @@
 
  ```
  dev_dependencies:
-   olawills_clean_arch_gen: 1.0.0 
+   dart_clean_gen: 1.0.4 
  ```
 
 2. Run 'dart pub get' to fetch the package 
@@ -15,9 +25,11 @@
 To generate the boilerplate code for your project, run the following command: 
 Activate it with
 ```shell
- dart pub run olawills_clean_arch_gen
+ dart pub run dart_clean_gen
 ```
 This command generates a clean architecture folder structure for Bloc based applications
+
+## Usage
 
 ## Folder Structure
 
@@ -60,7 +72,7 @@ lib/
 
 if you do not want to delete manually created folders along with code generation, u can pass in the --delete-existing-folders to false
 ```shell
- dart pub run olawills_clean_arch_gen --delete-existing-folders=false
+ dart pub run dart_clean_gen --delete-existing-folders=false
 ```
 if you do not pass in the extra parameter, it will go to the default which is to delete and generate new folder structure
 
