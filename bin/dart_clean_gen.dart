@@ -1,3 +1,3 @@
-library dart_clean_gen;
+library dart_clean_generator;
 
-export 'dart_clean_gen_base.dart';
+export 'dart_clean_generator_base.dart';

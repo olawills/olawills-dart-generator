@@ -1,6 +1,6 @@
 ## Dart Clean Arch Generator
 
-A dart package to generate Clean Architecture boilerplate
+A Dart package to generate Clean Architecture boilerplate with different design pattern for Bloc state management such as clean arch and mvc
 
 ## Table of Contents
 
@@ -12,12 +12,12 @@ A dart package to generate Clean Architecture boilerplate
 
 ## Installation
 
-1. Add 'olawills_clean_arch_gen'
+1. Add 'dart_clean_generator'
  as a dev dependency in your 'pubspec.yaml';
 
  ```
  dev_dependencies:
-   dart_clean_gen: 1.0.4 
+   dart_clean_generator: 1.0.0
  ```
 
 2. Run 'dart pub get' to fetch the package 
@@ -25,11 +25,21 @@ A dart package to generate Clean Architecture boilerplate
 To generate the boilerplate code for your project, run the following command: 
 Activate it with
 ```shell
- dart pub run dart_clean_gen
+ dart run dart_clean_generator
 ```
 This command generates a clean architecture folder structure for Bloc based applications
 
 ## Usage
+
+## 1 Clean Architecture
+
+To generate the boilerplate code for your project, run the following command:
+
+```dart
+dart run dart_clean_generator --cleanArch build
+```
+
+This command will create a new folder structure and files for the Clean architecture
 
 ## Folder Structure
 
@@ -42,6 +52,9 @@ lib/
 │   ├── config/
 │   ├── core/
 │   ├── utils/
+|        └── global_functions.dart
+|        └── failure.dart
+|        └── validator.dart
 │   
 │   
 │
@@ -63,22 +76,50 @@ lib/
     ├── bloc/
     |── controllers/
     ├── pages/
-    └── widgets/   
+    └── widgets/  
+
+
+└── bloc_observers.dart
+└── generator.dart 
 
 ```
 
+## 2 MVC (Model View Controller)
 
-## Reminder
+To generate the boilerplate code for your project, run the following command:
 
-if you do not want to delete manually created folders along with code generation, u can pass in the --delete-existing-folders to false
-```shell
- dart pub run dart_clean_gen --delete-existing-folders=false
+```dart
+dart run dart_clean_generator --mvc build
 ```
-if you do not pass in the extra parameter, it will go to the default which is to delete and generate new folder structure
 
+This command will create a new folder structure and files for the Clean architecture
 
-- You can modify the generator.dart file to change the folder structure to your taste.
-- This project was made to simplify the manual process of creating file, and it is majorly based on clean architecture and bloc
+## Folder Structure
+
+The generated folder structure is as follows:
+
+```
+lib
+└── core
+    └── locator
+    └── services
+    └── constants
+    └── utils
+        └── global_functions.dart
+        
+└── data
+    └── models
+    └── repositories
+    └── data_sources
+        
+└── bloc  
+└── controllers
+└── views
+
+└── bloc_observers.dart
+└── generator.dart
+
+```
 
 
 
